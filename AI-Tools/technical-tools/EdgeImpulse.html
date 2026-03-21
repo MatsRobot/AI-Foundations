@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical & Utility Tools | MatsRobot</title>
+    <style>
+        :root {
+            --primary-blue: #4285f4;
+            --tech-orange: #e67e22;
+            --success-green: #34a853; /* Green color for the button */
+            --dark-grey: #202124;
+            --light-bg: #f8f9fa;
+            --border-color: #dadce0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-grey);
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        h1, h2 { border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
+        
+        .eng-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: var(--light-bg);
+            border-radius: 8px;
+        }
+        .eng-text { flex: 2; }
+        .eng-img { flex: 1; text-align: right; }
+        .eng-img img { 
+            width: 100%; 
+            max-width: 250px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Button Styling */
+        .btn-green {
+            display: inline-block;
+            background-color: var(--success-green);
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: opacity 0.2s;
+        }
+        .btn-green:hover {
+            opacity: 0.9;
+            text-decoration: none;
+        }
+
+        .dual-core-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .core-card {
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 5px solid var(--primary-blue);
+        }
+        .util-card { border-top-color: var(--tech-orange); }
+
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid var(--border-color); }
+        th { background: var(--light-bg); }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #70757a;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+        a { color: var(--primary-blue); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <h1>⚙️ Technical & Utility Tools</h1>
+    <p>Strategic framework for <b>Edge AI Deployment</b> and <b>Data Clarification</b>.</p>
+
+    <div class="eng-header">
+        <div class="eng-text">
+            <h2>🚀 Engineering Objective</h2>
+            <p>In robotics, efficiency at the edge is critical. This module focuses on <b>on-device machine learning</b> for the RP2040 and the <b>neural reconstruction</b> of technical data logs.</p>
+            <!-- New Green Button -->
+            <a href="https://studio.edgeimpulse.com/login" target="_blank" class="btn-green">Launch Edge Impulse Studio</a>
+        </div>
+        <div class="eng-img">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=300" alt="Technical Hardware Logic">
+        </div>
+    </div>
+
+    <h2>✨ The Technical Stack</h2>
+    <div class="dual-core-container">
+        <div class="core-card">
+            <h3>⚡ Edge Impulse</h3>
+            <p><b>Primary:</b> Edge ML & tinyML</p>
+            <ul>
+                <li>C++ Library Exports</li>
+                <li>Sensor Fusion Analysis</li>
+                <li>On-Device Inference</li>
+            </ul>
+        </div>
+        <div class="core-card util-card">
+            <h3>📖 PicWish (Text)</h3>
+            <p><b>Primary:</b> Log Enhancement</p>
+            <ul>
+                <li>Character Sharpening</li>
+                <li>Document Digitization</li>
+                <li>Blurred Text Recovery</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>📐 Module Directory</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Resource</th>
+                <th>Description</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="edge-ml-guide.md">edge-ml-guide.md</a></td>
+                <td>Deployment workflows for microcontroller-based AI.</td>
+                <td>✅ Ready</td>
+            </tr>
+            <tr>
+                <td><a href="EdgeImpulse.md">EdgeImpulse.md</a></td>
+                <td>Deep dive into the Developer Plan and GPU training.</td>
+                <td>✅ Ready</td>
+            </tr>
+            <tr>
+                <td><a href="text-recovery.md">text-recovery.md</a></td>
+                <td>Techniques for cleaning up pixelated log files.</td>
+                <td>✅ Ready</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer class="footer">
+        <small>© 2026 MatsRobot | Licensed under the <a href="#">MIT License</a></small>
+    </footer>
+
+</body>
+</html>

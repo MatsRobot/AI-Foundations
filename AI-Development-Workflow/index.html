@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://matsrobot.github.io/Favicon-192.png" sizes="192x192">
+    
+    <title>AI-Assisted Development | MatsRobot Foundations</title>
+    
+    <style>
+        :root {
+            --gh-blue: #0366d6;
+            --gh-dark: #24292e;
+            --gh-border: #eaecef;
+            --gh-bg-gray: #f6f8fa;
+            --danger-red: #d73a49;
+            --success-green: #28a745;
+        }
+
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: var(--gh-dark); 
+            max-width: 950px; 
+            margin: 0 auto; 
+            padding: 2rem; 
+        }
+
+        .back-link { text-decoration: none; color: var(--gh-blue); font-size: 0.9rem; margin-bottom: 1rem; display: block; }
+        
+        h1 { font-size: 2rem; border-bottom: 1px solid var(--gh-border); padding-bottom: 0.5rem; }
+        h2 { color: var(--gh-blue); margin-top: 2.5rem; border-bottom: 1px solid var(--gh-border); padding-bottom: 0.3rem;}
+        
+        .intro-card {
+            background: var(--gh-bg-gray);
+            border: 1px solid var(--gh-border);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .tip-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 1.5rem;
+        }
+
+        .tip-card {
+            border: 1px solid var(--gh-border);
+            border-radius: 8px;
+            padding: 1.2rem;
+            background: #fff;
+        }
+
+        .tip-card h3 { margin-top: 0; color: var(--gh-dark); font-size: 1.1rem; }
+
+        .example-box {
+            background: #fff9db;
+            border-left: 4px solid #fcc419;
+            padding: 10px 15px;
+            margin: 10px 0;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border: 1px solid var(--gh-border);
+        }
+
+        th { background-color: var(--gh-bg-gray); }
+
+        .warning-box {
+            border: 1px solid var(--danger-red);
+            border-radius: 6px;
+            padding: 1.5rem;
+            background-color: #ffeef0;
+            margin-top: 2rem;
+        }
+
+        footer { 
+            margin-top: 4rem; 
+            padding: 2rem 0;
+            border-top: 1px solid var(--gh-border); 
+            text-align: center; 
+            color: #6a737d; 
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-link">← Back to Foundations Home</a>
+
+    <h1>🤖 AI-Assisted Development & Debugging</h1>
+    
+    <div class="intro-card">
+        <p>Traditional manual programming is no longer the primary barrier to entry for robotics. Modern AI platforms like Gemini generate functional code and resolve bugs autonomously. However, a foundational understanding of software logic remains essential to effectively "steer" the AI when it deviates from your design goals.</p>
+    </div>
+
+    <h2>🤝 Best Practices for AI Debugging</h2>
+    <p>Integrating AI into your workflow is a game-changer for robotics, bridging high-level Python logic and low-level C++ hardware interactions.</p>
+
+    <div class="tip-grid">
+        <div class="tip-card">
+            <h3>1. Hardware Awareness</h3>
+            <p>Always specify your board and libraries. Embedded C++ has constraints standard C++ does not.</p>
+            <div class="example-box">"I am using an ESP32 with the WiFi.h library..."</div>
+        </div>
+
+        <div class="tip-card">
+            <h3>2. Rubber Ducking</h3>
+            <p>Ask the AI to explain what the code <em>thinks</em> it is doing to catch logic flaws.</p>
+            <div class="example-box">"Walk me through the logic of this loop step-by-step..."</div>
+        </div>
+
+        <div class="tip-card">
+            <h3>3. Iterative Error Analysis</h3>
+            <p>If a fix fails, provide the specific compiler error or serial monitor output rather than just saying "it didn't work".</p>
+        </div>
+
+        <div class="tip-card">
+            <h3>4. Optimize for Edge Cases</h3>
+            <p>Robots face noisy sensors and dying batteries. Use AI to "harden" your code against these real-world failures.</p>
+        </div>
+    </div>
+
+    <h2>🛠️ Debugging Workflow Summary</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Step</th>
+                <th>Action</th>
+                <th>AI Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Isolate</strong></td>
+                <td>Feed the AI only the failing function.</td>
+                <td>Focuses the "attention" of the model.</td>
+            </tr>
+            <tr>
+                <td><strong>Annotate</strong></td>
+                <td>Add comments explaining your intent.</td>
+                <td>Helps AI spot gaps between intent and execution.</td>
+            </tr>
+            <tr>
+                <td><strong>Validate</strong></td>
+                <td>Ask about deprecated functions.</td>
+                <td>Ensures compatibility with modern robot libraries.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="warning-box">
+        <h3>⚠️ Managing Code Integrity</h3>
+        <p>Beware of <strong>Code Truncation</strong>, where AI replaces original code with <code>// ... rest of code</code>, leading to broken dependencies.</p>
+        <ul>
+            <li><strong>Full File Mandate:</strong> Instruct AI to return the entire script without placeholders.</li>
+            <li><strong>Modular Prompting:</strong> Break logic into smaller modules (e.g., <code>motor_control.cpp</code>) to prevent truncation.</li>
+            <li><strong>Version Comparison:</strong> Use <strong>Diff Tools</strong> to visually verify changes before saving.</li>
+            <li><strong>Append Only:</strong> Ask for only the new function and integrate it manually.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>© 2026 MatsRobot | Part of the AI Foundations Repository</p>
+    </footer>
+
+</body>
+</html>
