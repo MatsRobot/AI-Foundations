@@ -29,6 +29,36 @@
             padding: 2rem; 
         }
 
+        /* Tightened Navigation Bar */
+        .sub-nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: var(--gh-bg-gray);
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--gh-border);
+        }
+
+        .nav-back {
+            text-decoration: none;
+            color: var(--gh-blue);
+            font-weight: 700;
+            padding-right: 15px;
+            border-right: 1px solid #d1d5da;
+            font-size: 0.85rem;
+        }
+
+        .sub-nav a:not(.nav-back) {
+            text-decoration: none;
+            color: var(--gh-dark);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .sub-nav a:hover { color: var(--gh-blue); }
+
         .hero-section {
             display: flex;
             gap: 2.5rem;
@@ -86,14 +116,6 @@
 
         .topic-card h3 { margin-top: 0; font-size: 1.2rem; }
 
-        .topic-card a {
-            color: var(--gh-blue);
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: auto;
-            padding-top: 15px;
-        }
-
         .btn-github { 
             background-color: var(--gh-green); 
             color: white; 
@@ -106,6 +128,18 @@
             font-weight: 600;
         }
 
+        .btn-outline {
+            border: 1px solid var(--gh-border);
+            background: #fff;
+            color: var(--gh-blue) !important;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: auto;
+        }
+
         footer { 
             margin-top: 4rem; 
             padding: 2rem 0;
@@ -116,71 +150,17 @@
         }
 
         @media (max-width: 768px) { .hero-section { flex-direction: column; } }
-		
-		.nav-header {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			margin-bottom: 2rem;
-			padding-bottom: 1rem;
-			border-bottom: 1px solid var(--gh-border);
-		}
-
-		.back-link {
-			text-decoration: none;
-			color: var(--gh-blue);
-			font-size: 0.9rem;
-			font-weight: 500;
-		}
-
-		.sub-nav {
-			display: flex;
-			gap: 20px;
-			background: var(--gh-bg-gray);
-			padding: 10px 15px;
-			border-radius: 6px;
-			margin-bottom: 2rem;
-		}
-
-		.sub-nav a {
-			text-decoration: none;
-			color: var(--gh-dark);
-			font-size: 0.85rem;
-			font-weight: 600;
-		}
-
-		.sub-nav a:hover { color: var(--gh-blue); }
-
-		.btn-outline {
-			border: 1px solid var(--gh-border);
-			background: #fff;
-			color: var(--gh-blue) !important;
-			padding: 6px 14px;
-			border-radius: 6px;
-			font-size: 0.85rem;
-			text-decoration: none;
-			display: inline-block;
-		}
-
-
     </style>
 </head>
 <body>
-    <div class="nav-header">
-        <a href="https://matsrobot.github.io/" class="back-link">← Back to MatsRobot Hub</a>
-        <span style="color: #6a737d; font-size: 0.8rem;">Knowledge Base / AI Foundations</span>
-    </div>
-
-    <div class="hero-section">
-        </div>
 
     <nav class="sub-nav">
+        <a href="https://matsrobot.github.io/" class="nav-back">← Hub</a>
         <a href="#theory">🔢 Theory</a>
         <a href="#tools">🛠️ AI Tools</a>
         <a href="#workflow">🤖 Workflow</a>
         <a href="#env">🐍 Environment</a>
     </nav>
-
 
     <div class="hero-section">
         <div class="hero-text">
@@ -190,7 +170,6 @@
             <div class="note">
                 <strong>The Goal:</strong> To build a foundational understanding of software logic essential for "steering" AI platforms like Gemini toward specific design goals.
             </div>
-
 
             <a href="https://github.com/MatsRobot/AI-Foundations" class="btn-github">
                 <span>View Repository on GitHub</span>
@@ -202,47 +181,43 @@
             <p><small>Building the Data Pipeline Intuition</small></p>
         </div>
     </div>
-<div class="nav-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--gh-border);">
-    <a href="https://matsrobot.github.io/" class="back-link" style="text-decoration: none; color: var(--gh-blue); font-weight: 500;">← Back to MatsRobot Hub</a>
-    <span style="color: #6a737d; font-size: 0.8rem;">Knowledge Base / AI Foundations</span>
-</div>
 
-<h2>Core Learning Modules</h2>
+    <h2>Core Learning Modules</h2>
 
-<div class="topic-grid">
-    
-    <div class="topic-card" id="theory">
-        <h3>🔢 Neural Network Basics</h3>
-        <p>Mastering the math: Matrix calculations, Tensors, and the "Chain Rule" logic behind backpropagation.</p>
-        <div style="margin-top: 15px;">
-            <a href="Neural-Networks/" class="btn-outline">Explore Theory →</a>
+    <div class="topic-grid">
+        
+        <div class="topic-card" id="theory">
+            <h3>🔢 Neural Network Basics</h3>
+            <p>Mastering the math: Matrix calculations, Tensors, and the "Chain Rule" logic behind backpropagation.</p>
+            <div style="margin-top: 15px;">
+                <a href="Neural-Networks/" class="btn-outline">Explore Theory →</a>
+            </div>
+        </div>
+
+        <div class="topic-card" id="tools">
+            <h3>🛠️ AI-Tools</h3>
+            <p>Configuration files for steering LLMs toward embedded systems and robotics logic.</p>
+            <div style="margin-top: 15px;">
+                <a href="AI-Tools/" class="btn-outline">Explore Methods →</a>
+            </div>
+        </div>
+        
+        <div class="topic-card" id="workflow">
+            <h3>🤖 AI-Assisted Development</h3>
+            <p>Structured workflows for using AI as a debugging partner and preventing code truncation.</p>
+            <div style="margin-top: 15px;">
+                <a href="AI-Development-Workflow/" class="btn-outline">View Workflow →</a>
+            </div>
+        </div>
+
+        <div class="topic-card" id="env">
+            <h3>🐍 Python & IDE Setup</h3>
+            <p>Configuring VS Code for professional use and transitioning from PyCharm to a lightweight environment.</p>
+            <div style="margin-top: 15px;">
+                <a href="Python-Development-Environment/" class="btn-outline">Environment Guide →</a>
+            </div>
         </div>
     </div>
-
-    <div class="topic-card" id="tools">
-        <h3>🛠️ AI-Tools</h3>
-        <p>Configuration files for steering LLMs toward embedded systems and robotics logic.</p>
-        <div style="margin-top: 15px;">
-            <a href="AI-Tools/" class="btn-outline">Explore Methods →</a>
-        </div>
-    </div>
-    
-    <div class="topic-card" id="workflow">
-        <h3>🤖 AI-Assisted Development</h3>
-        <p>Structured workflows for using AI as a debugging partner and preventing code truncation.</p>
-        <div style="margin-top: 15px;">
-            <a href="AI-Development-Workflow/" class="btn-outline">View Workflow →</a>
-        </div>
-    </div>
-
-    <div class="topic-card" id="env">
-        <h3>🐍 Python & IDE Setup</h3>
-        <p>Configuring VS Code for professional use and transitioning from PyCharm to a lightweight environment.</p>
-        <div style="margin-top: 15px;">
-            <a href="Python-Development-Environment/" class="btn-outline">Environment Guide →</a>
-        </div>
-    </div>
-</div>
 
     <h2>Development Philosophy</h2>
     <ul>
