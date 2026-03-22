@@ -1,5 +1,14 @@
 # 🔢 Neural Network Basics: The Mathematical Bedrock
 
+<p align="left">
+  <a href="https://matsrobot.github.io/AI-Foundations/Neural-Networks/">
+    <img src="https://img.shields.io/badge/Open_Theory_Page-0366d6?style=for-the-badge&logo=github-pages&logoColor=white" />
+  </a>
+  <a href="https://matsrobot.github.io/AI-Foundations/">
+    <img src="https://img.shields.io/badge/AI_Foundations_Home-24292e?style=for-the-badge&logo=brain&logoColor=white" />
+  </a>
+</p>
+
 To understand how neural networks utilize **Backpropagation** and **Reinforcement Learning**, it is essential to move beyond the "black box" and understand the underlying calculus and linear algebra. This section documents the mathematical prerequisites required to build, debug, and optimize AI models.
 
 ---
@@ -25,8 +34,6 @@ The core of backpropagation lies in the **"Chain Rule."** To understand how a mo
 * **Robotic Application:** Calculus is the engine behind the **PID (Proportional–Integral–Derivative)** controllers used in self-balancing robots to calculate necessary coefficients.
 * **AUC & RL:** Integration is essential for calculating the Area Under the Curve (AUC) for performance metrics and dealing with continuous probability in Reinforcement Learning.
 
-
-
 #### 🎥 Featured Tutorials:
 [![Calculus Introduction](https://img.youtube.com/vi/WsQQvHm4lSw/hqdefault.jpg)](https://www.youtube.com/watch?v=WsQQvHm4lSw)
 *Also check out:* [Introduction to Limits](https://www.youtube.com/watch?v=YNstP0ESndU)
@@ -50,6 +57,6 @@ For a deep dive into the complete mathematical landscape of Machine Learning, th
 
 ---
 
-[← Back to Main Page](../README.md)
+[← Back to AI Foundations](../README.md)
 
 <small>© 2026 MatsRobot | Neural Network Foundations</small>
