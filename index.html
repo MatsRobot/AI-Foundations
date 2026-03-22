@@ -116,6 +116,34 @@
         }
 
         @media (max-width: 768px) { .hero-section { flex-direction: column; } }
+		
+		.sub-nav {
+			display: flex;
+			gap: 20px;
+			margin-bottom: 2rem;
+			padding: 10px 0;
+			border-bottom: 1px solid var(--gh-border);
+		}
+		.sub-nav a {
+			text-decoration: none;
+			color: var(--gh-blue);
+			font-weight: 500;
+			font-size: 0.9rem;
+		}
+		.sub-nav a:hover { text-decoration: underline; }
+
+		.btn-outline {
+			border: 1px solid var(--gh-border);
+			background: #fff;
+			color: var(--gh-blue) !important;
+			padding: 6px 14px;
+			border-radius: 6px;
+			font-size: 0.85rem;
+			transition: 0.2s;
+		}
+		.btn-outline:hover { background: var(--gh-bg-gray); border-color: #adbac7; }
+
+
     </style>
 </head>
 <body>
@@ -141,9 +169,25 @@
         </div>
     </div>
 
+	<nav class="sub-nav">
+		<a href="#theory">🔢 Theory</a>
+		<a href="#tools">🛠️ AI Tools</a>
+		<a href="#workflow">🤖 Workflow</a>
+		<a href="#env">🐍 Environment</a>
+	</nav>
+
+	<div class="topic-card" id="theory">
+		<h3>🔢 Neural Network Basics</h3>
+		<p>Mastering the math: Matrix calculations, Tensors, and the "Chain Rule" logic behind backpropagation.</p>
+		<div style="margin-top: 15px;">
+			<a href="https://matsrobot.github.io/AI-Foundations/Neural-Networks/" class="btn-outline">Explore Theory →</a>
+		</div>
+	</div>
+	
+	
+
     <h2>Core Learning Modules</h2>
     <div class="topic-grid">
-        
         <div class="topic-card">
             <h3>🔢 Neural Network Basics</h3>
             <p>Mastering the math: Matrix calculations, Tensors, and the "Chain Rule" logic behind backpropagation.</p>
