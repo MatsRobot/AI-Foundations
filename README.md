@@ -56,7 +56,7 @@ The project is divided into four functional modules:
 - **Code Integrity:** Implementing strategies like the "Full File Mandate" and "Modular Prompting" to prevent AI code truncation.
 - **Version Control:** Using Diff Tools to visually verify AI-generated changes before deployment.
 
-### 4. 🐍 <small>[Python & IDE Setup](https://github.com/MatsRobot/AI-Foundations/blob/main/Python-Development-Environment/)</small>
+### 4. 🐍 <small>[Python Development Environment](https://github.com/MatsRobot/AI-Foundations/blob/main/Python-Development-Environment/)</small>
 - **VS Code vs. PyCharm:** Transitioning from "automatic" environments that hide the "plumbing" to lightweight, versatile professional tools.
 - **Virtual Environments:** Managing specific library dependencies and absolute paths effectively to ensure application stability.
 - **Polyglot Advantage:** Leveraging an environment that supports Python, C++, and other essential robotics languages in one place.
