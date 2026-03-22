@@ -50,13 +50,5 @@
 
 ---
 
-## ⚡ Quick Start
-
-1. **Model Selection:** Review [`Model_Comparison.md`](https://matsrobot.github.io/AI-Foundations/AI-Tools/Model_Comparison.md) to select the right AI for your current task.
-2. **Initialize Logic:** Use the configurations in [`/chatbots`](https://matsrobot.github.io/AI-Foundations/AI-Tools/chatbots/) to prime your AI partner for robotics code.
-3. **Deploy Edge AI:** Follow the [`edge-ml-guide.md`](https://matsrobot.github.io/AI-Foundations/AI-Tools/technical-tools/edge-ml-guide.md) to deploy models to ESP32/RP2040 hardware.
-4. **Optimize Assets:** Use the linked [Image Tools](https://matsrobot.github.io/AI-Foundations/AI-Tools/image-tools/index.html) to clean up project documentation before publishing.
-
----
 
 <small>© 2026 MatsRobot | Licensed under the [MIT License](https://github.com/MatsRobot/matsrobot.github.io/blob/main/LICENSE)</small>
