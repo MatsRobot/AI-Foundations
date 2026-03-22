@@ -6,7 +6,6 @@
     <link rel="icon" type="image/png" href="https://matsrobot.github.io/Favicon-192.png" sizes="192x192">
     
     <title>Math Foundations | Neural Network Basics</title>
-    <meta name="description" content="Deep dive into the mathematical prerequisites for AI: Linear Algebra, Calculus, and Differential Equations.">
     
     <style>
         :root {
@@ -27,9 +26,37 @@
             padding: 2rem; 
         }
 
-        .back-link { text-decoration: none; color: var(--gh-blue); font-size: 0.9rem; margin-bottom: 1rem; display: block; }
+        /* Standardized Navigation */
+        .sub-nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: var(--gh-bg-gray);
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--gh-border);
+        }
+
+        .nav-back {
+            text-decoration: none;
+            color: var(--gh-blue);
+            font-weight: 700;
+            padding-right: 15px;
+            border-right: 1px solid #d1d5da;
+            font-size: 0.85rem;
+        }
+
+        .sub-nav a:not(.nav-back) {
+            text-decoration: none;
+            color: var(--gh-dark);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .sub-nav a:hover { color: var(--gh-blue); }
         
-        h1 { font-size: 2rem; border-bottom: 1px solid var(--gh-border); padding-bottom: 0.5rem; }
+        h1 { font-size: 2rem; border-bottom: 1px solid var(--gh-border); padding-bottom: 0.5rem; margin-top: 0; }
         h2 { color: var(--gh-blue); margin-top: 2.5rem; }
         
         .math-grid {
@@ -67,8 +94,6 @@
             text-decoration: none;
         }
 
-        .video-link:hover { text-decoration: underline; }
-
         .resource-box {
             background-color: var(--gh-bg-gray);
             border-radius: 6px;
@@ -86,32 +111,30 @@
             font-size: 0.9rem;
         }
 		
-		.math-card img {
-			transition: opacity 0.2s, transform 0.2s;
-		}
-
-		.math-card img:hover {
-			opacity: 0.8;
-			transform: scale(1.02);
-		}
+		.math-card img { transition: opacity 0.2s, transform 0.2s; width: 100%; border-radius: 4px; margin-top: 10px; border: 1px solid var(--gh-border); }
+		.math-card img:hover { opacity: 0.8; transform: scale(1.02); }
 
     </style>
 </head>
 <body>
 
-    <a href="../index.html" class="back-link">← Back to Foundations Home</a>
+    <nav class="sub-nav">
+        <a href="https://matsrobot.github.io/" class="nav-back">← Hub</a>
+        <a href="../index.html">🧠 AI Foundations</a>
+        <span style="color: #6a737d; font-size: 0.85rem; font-weight: 600;">🔢 Theory</span>
+    </nav>
 
     <h1>🔢 Neural Network Basics</h1>
-    <p>To understand how neural networks utilize <strong>Backpropagation</strong> and <strong>Reinforcement Learning</strong>, you must master the underlying mathematical engines. This section bridges the gap between abstract equations and practical robotic implementation.</p>
+    <p>To understand how neural networks utilize <strong>Backpropagation</strong> and <strong>Reinforcement Learning</strong>, you must master the underlying mathematical engines.</p>
 
+    
     <div class="math-grid">
         <div class="math-card">
             <span class="tag">Linear Algebra</span>
             <h3>Matrix Calculations & Tensors</h3>
             <p>Data in AI is represented as multidimensional arrays (Tensors). Matrix operations form the backbone of weight updates.</p>
-            
             <a href="https://www.youtube.com/watch?v=kuixY2bCc_0" target="_blank">
-                <img src="https://img.youtube.com/vi/kuixY2bCc_0/hqdefault.jpg" alt="Matrix Multiplication Tutorial" style="width:100%; border-radius:4px; margin-top:10px; border: 1px solid var(--gh-border);">
+                <img src="https://img.youtube.com/vi/kuixY2bCc_0/hqdefault.jpg" alt="Matrix Multiplication Tutorial">
             </a>
             <a href="https://www.youtube.com/watch?v=kuixY2bCc_0" class="video-link">▶ Watch Tutorial</a>
         </div>
@@ -120,9 +143,8 @@
             <span class="tag">Calculus</span>
             <h3>Differentiation & PID Control</h3>
             <p>The "Chain Rule" is the heart of backpropagation. Essential for **PID controllers** used in robotic self-balancing.</p>
-            
             <a href="https://www.youtube.com/watch?v=WsQQvHm4lSw" target="_blank">
-                <img src="https://img.youtube.com/vi/WsQQvHm4lSw/hqdefault.jpg" alt="Calculus Tutorial" style="width:100%; border-radius:4px; margin-top:10px; border: 1px solid var(--gh-border);">
+                <img src="https://img.youtube.com/vi/WsQQvHm4lSw/hqdefault.jpg" alt="Calculus Tutorial">
             </a>
             <a href="https://www.youtube.com/watch?v=WsQQvHm4lSw" class="video-link">▶ Watch Tutorial</a>
         </div>
@@ -130,10 +152,9 @@
         <div class="math-card">
             <span class="tag">Differential Equations</span>
             <h3>Dynamic Algorithmic Modelling</h3>
-            <p>Critical for systems that change over time, helping autonomous agents maintain stability in fluctuating environments.</p>
-            
+            <p>Critical for systems that change over time, helping autonomous agents maintain stability.</p>
             <a href="https://www.youtube.com/watch?v=p_di4Zn4wz4" target="_blank">
-                <img src="https://img.youtube.com/vi/p_di4Zn4wz4/hqdefault.jpg" alt="Differential Equations Tutorial" style="width:100%; border-radius:4px; margin-top:10px; border: 1px solid var(--gh-border);">
+                <img src="https://img.youtube.com/vi/p_di4Zn4wz4/hqdefault.jpg" alt="Differential Equations Tutorial">
             </a>
             <a href="https://www.youtube.com/watch?v=p_di4Zn4wz4" class="video-link">▶ Watch Tutorial</a>
         </div>
@@ -141,7 +162,7 @@
 	
     <div class="resource-box">
         <h3>🎓 Deep Dive: Mathematics for Machine Learning</h3>
-        <p>A comprehensive 9-hour course from Imperial College London covering the full spectrum of AI mathematics.</p>
+        <p>A comprehensive course from Imperial College London covering the full spectrum of AI mathematics.</p>
         <a href="https://www.youtube.com/watch?v=0z6AhrOSrRs" class="video-link">View Full Course on YouTube →</a>
     </div>
 
