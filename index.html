@@ -143,11 +143,79 @@
 		}
 		.btn-outline:hover { background: var(--gh-bg-gray); border-color: #adbac7; }
 
+		.nav-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 2rem;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid var(--gh-border);
+		}
+
+		.back-link {
+			text-decoration: none;
+			color: var(--gh-blue);
+			font-size: 0.9rem;
+			font-weight: 500;
+		}
+
+		.sub-nav {
+			display: flex;
+			gap: 20px;
+			background: var(--gh-bg-gray);
+			padding: 10px 15px;
+			border-radius: 6px;
+			margin-bottom: 2rem;
+		}
+
+		.sub-nav a {
+			text-decoration: none;
+			color: var(--gh-dark);
+			font-size: 0.85rem;
+			font-weight: 600;
+		}
+
+		.sub-nav a:hover { color: var(--gh-blue); }
+
+		.btn-outline {
+			border: 1px solid var(--gh-border);
+			background: #fff;
+			color: var(--gh-blue) !important;
+			padding: 6px 14px;
+			border-radius: 6px;
+			font-size: 0.85rem;
+			text-decoration: none;
+			display: inline-block;
+		}
+
 
     </style>
 </head>
 <body>
+    <div class="nav-header">
+        <a href="https://matsrobot.github.io/" class="back-link">← Back to MatsRobot Hub</a>
+        <span style="color: #6a737d; font-size: 0.8rem;">Knowledge Base / AI Foundations</span>
+    </div>
 
+    <div class="hero-section">
+        </div>
+
+    <nav class="sub-nav">
+        <a href="#theory">🔢 Theory</a>
+        <a href="#tools">🛠️ AI Tools</a>
+        <a href="#workflow">🤖 Workflow</a>
+        <a href="#env">🐍 Environment</a>
+    </nav>
+
+    <h2>Core Learning Modules</h2>
+    <div class="topic-grid">
+        <div class="topic-card" id="theory">
+            <h3>🔢 Neural Network Basics</h3>
+            <p>Mastering the math: Matrix calculations and Tensors.</p>
+            <a href="Neural-Networks/" class="btn-outline">Explore Theory →</a>
+        </div>
+        </div>
+		
     <div class="hero-section">
         <div class="hero-text">
             <h1>🧠 AI Foundations: From Logic to Implementation</h1>

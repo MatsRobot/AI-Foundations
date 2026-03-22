@@ -2,15 +2,15 @@
 
 <p align="left">
   <a href="https://matsrobot.github.io/AI-Foundations/">
-    <img src="https://img.shields.io/badge/View_Knowledge_Base-0366d6?style=for-the-badge&logo=github-pages&logoColor=white" />
+    <img src="https://img.shields.io/badge/Open_Knowledge_Base-0366d6?style=for-the-badge&logo=github-pages&logoColor=white" />
   </a>
-  <a href="https://github.com/MatsRobot/AI-Foundations/archive/refs/heads/main.zip">
-    <img src="https://img.shields.io/badge/Download_Modules-238636?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="https://matsrobot.github.io/">
+    <img src="https://img.shields.io/badge/Main_Project_Hub-24292e?style=for-the-badge&logo=robot&logoColor=white" />
   </a>
 </p>
 
-**AI Foundations** is a structured repository documenting the transition from core mathematical concepts to practical machine learning deployment. This project organizes the four functional pillars of modern AI development: **Neural Network Theory**, **AI Tooling**, **AI-Assisted Development**, and **Optimized Environments**.
-
+**AI Foundations** documents the transition from mathematical concepts to practical deployment. 
+It covers four pillars: **Neural Network Theory**, **AI Tooling**, **AI-Assisted Development**, and **Optimized Environments**.
 ---
 
 <table width="100%">
