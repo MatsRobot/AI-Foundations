@@ -46,11 +46,12 @@
 
 ---
 
-## ⚡ Quick Start
+## ⚡ Quick Start: Operational Workflow
 
-1. **Data Collection:** Capture real-world IMU or Microphone data via MCU.
-2. **Training:** Utilize GPU-accelerated windows for specialized TinyML models.
-3. **Deployment:** Export an optimized C++ library for native execution on battery-powered hardware.
+1. **Select Your Model:** Review the `Model_Comparison.md` to decide if your task requires **Gemini** (Logic/Vision) or **Pi-AI** (Social/Interaction).
+2. **Apply System Logic:** Use the persona instructions in [`/chatbots`](https://github.com/MatsRobot/AI-Foundations/tree/main/AI-Tools/chatbots) to prime the LLM for hardware-aware code generation.
+3. **Generate Hardware Code:** Utilize the [`/prompts`](https://matsrobot.github.io/AI-Foundations/AI-Tools/prompts/) library to output MicroPython or C++ code optimized for MCU registers.
+4. **Deploy Edge Intelligence:** Use the guides in [`/technical-tools`](https://github.com/MatsRobot/AI-Foundations/tree/main/AI-Tools/technical-tools/) to convert raw sensor data into local TinyML binaries via Edge Impulse.
 
 ---
 
