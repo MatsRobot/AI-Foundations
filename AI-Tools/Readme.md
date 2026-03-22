@@ -44,11 +44,9 @@
 
 | Folder / File | Technical Description |
 | :--- | :--- |
-| **[`/chatbots`](https://matsrobot.github.io/AI-Foundations/AI-Tools/chatbots/)** | Logic files for steering **Gemini**, **DeepSeek**, and **Pi-AI**. |
-| **[`/technical-tools`](https://matsrobot.github.io/AI-Foundations/AI-Tools/technical-tools/)** | **Edge Impulse** dashboards and TinyML implementation guides. |
-| **[`/image-tools`](https://matsrobot.github.io/AI-Foundations/AI-Tools/image-tools/)** | Utilities for visual documentation and asset optimization. |
-| **[`/prompts`](https://matsrobot.github.io/AI-Foundations/AI-Tools/prompts/)** | Hardware-aware templates for MicroPython and C++ registers. |
-| **`Model_Comparison.md`** | Detailed technical benchmarks of core LLM models. |
+| **[`Chatbots`](https://github.com/MatsRobot/AI-Foundations/tree/main/AI-Tools/chatbots)** | Logic files for steering **Gemini**, **DeepSeek**, and **Pi-AI**. |
+| **[`Technical-tools`](https://github.com/MatsRobot/AI-Foundations/tree/main/AI-Tools/technical-tools/)** | **Edge Impulse** dashboards and TinyML implementation guides. |
+| **[`Image-tools`](https://github.com/MatsRobot/AI-Foundations/tree/main/AI-Tools/image-tools/)** | Utilities for visual documentation and asset optimization. |
 
 ---
 
