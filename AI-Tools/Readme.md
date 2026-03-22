@@ -13,30 +13,25 @@
 
 ---
 
+## 🚀 Engineering Objective: Tool Specialization
+
 <table width="100%">
   <tr>
-    <td width="60%" align="left" valign="middle">
-      <h2>🚀 Engineering Objective: Tool Specialization</h2>
-    </td>
-    <td width="40%" align="center" valign="middle">
-      <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=250" alt="AI Logic Visualization" width="250" style="border-radius: 8px;" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">
+    <td width="35%" valign="top">
       <p>
         In a modern robotics workflow, relying on a single "General AI" often leads to prompt fatigue and suboptimal code. True efficiency comes from <b>Model Orchestration</b>—choosing the right tool for the specific technical or creative hurdle.
       </p>
+    </td>
+    <td width="35%" valign="top">
       <p>
-        I have engineered this stack to bridge the gap: providing <b>High-IQ Logic</b> for C++ development and <b>High-EQ Interaction</b> for social robotics. From using <b>Gemini</b> for VLA (Vision-Language-Action) brains to <b>Edge Impulse</b> for local deployment:
+        I have engineered this stack to bridge the gap: providing <b>High-IQ Logic</b> for C++ development and <b>High-EQ Interaction</b> for social robotics. From using <b>Gemini</b> for VLA brains to <b>Edge Impulse</b> for local deployment.
       </p>
+    </td>
+    <td width="30%" align="center" valign="top">
+      <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=180" alt="AI Logic Visualization" width="180" style="border-radius: 8px;" />
     </td>
   </tr>
 </table>
-
-1. **Data Collection:** Capture real-world IMU or Microphone data via MCU.
-2. **Training:** Utilize GPU-accelerated windows for specialized TinyML models.
-3. **Deployment:** Export an optimized C++ library for native execution on battery-powered hardware.
 
 ---
 
@@ -50,5 +45,12 @@
 
 ---
 
+## ⚡ Quick Start
+
+1. **Data Collection:** Capture real-world IMU or Microphone data via MCU.
+2. **Training:** Utilize GPU-accelerated windows for specialized TinyML models.
+3. **Deployment:** Export an optimized C++ library for native execution on battery-powered hardware.
+
+---
 
 <small>© 2026 MatsRobot | Licensed under the [MIT License](https://github.com/MatsRobot/matsrobot.github.io/blob/main/LICENSE)</small>
