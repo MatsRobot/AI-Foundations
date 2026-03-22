@@ -10,6 +10,9 @@
             --dark-grey: #202124;
             --light-bg: #f8f9fa;
             --border-color: #dadce0;
+            --gh-blue: #0366d6;
+            --gh-border: #eaecef;
+            --gh-bg-gray: #f6f8fa;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -20,6 +23,33 @@
             padding: 40px 20px;
             background-color: #ffffff;
         }
+
+        /* Navigation Bar */
+        .sub-nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: var(--gh-bg-gray);
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--gh-border);
+        }
+        .nav-back {
+            text-decoration: none;
+            color: var(--gh-blue);
+            font-weight: 700;
+            padding-right: 15px;
+            border-right: 1px solid #d1d5da;
+            font-size: 0.85rem;
+        }
+        .sub-nav a:not(.nav-back) {
+            text-decoration: none;
+            color: var(--dark-grey);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
         h1, h2, h3 { color: var(--dark-grey); border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
         .header-flex {
             display: flex;
@@ -30,81 +60,63 @@
             padding-bottom: 20px;
         }
         .header-text { flex: 2; }
-        .header-img { flex: 1; text-align: right; }
-        .header-img img { border-radius: 8px; width: 100%; max-width: 250px; }
+        .header-img { flex: 1; text-align: center; }
+        .header-img img { max-width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         
         .pill {
-            background: var(--light-bg);
-            border-left: 4px solid var(--primary-blue);
+            background-color: #e8f0fe;
+            color: #1967d2;
             padding: 15px;
-            margin: 20px 0;
-            font-style: italic;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
+            border-radius: 8px;
+            font-weight: 500;
             margin: 20px 0;
         }
-        th, td {
-            text-align: left;
-            padding: 12px;
-            border-bottom: 1px solid var(--border-color);
-        }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid var(--border-color); }
         th { background-color: var(--light-bg); }
-
-        .card-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
+        
+        .card-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
         .card {
             border: 1px solid var(--border-color);
-            border-radius: 8px;
             padding: 20px;
-            transition: transform 0.2s;
+            border-radius: 8px;
+            background-color: var(--light-bg);
+            transition: box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        .footer {
-            margin-top: 50px;
-            font-size: 0.8em;
-            color: #70757a;
-            text-align: center;
-            border-top: 1px solid var(--border-color);
-            padding-top: 20px;
-        }
-        code { background: #f1f3f4; padding: 2px 4px; border-radius: 4px; }
+        .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .card h3 { margin-top: 0; }
+        .card p { flex-grow: 1; font-size: 0.9rem; }
+        
+        /* Subpage link styling */
+        .card-links { margin-top: 10px; display: flex; flex-direction: column; gap: 5px; }
+        .card-links a { color: var(--gh-blue); text-decoration: none; font-weight: 600; font-size: 0.85rem; }
+        .card-links a:hover { text-decoration: underline; }
+
+        .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border-color); text-align: center; color: #70757a; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>🛠️ AI-Tools: Professional Workflow</h1>
-        <p><strong>AI-Tools</strong> is a curated ecosystem of specialized artificial intelligence utilities used to bridge the gap between creative conceptualization and hardware implementation.</p>
-    </header>
+    <nav class="sub-nav">
+        <a href="https://matsrobot.github.io/" class="nav-back">← Hub</a>
+        <a href="https://matsrobot.github.io/AI-Foundations/index.html">🧠 AI Foundations</a>
+        <a href="#logic">🛠️ Tools</a>
+    </nav>
 
-    <section class="header-flex">
+    <div class="header-flex">
         <div class="header-text">
-            <h2>🚀 Engineering Objective: Tool Specialization</h2>
-            <p>In a modern robotics workflow, relying on a single "General AI" often leads to prompt fatigue and suboptimal code. True efficiency comes from <b>Model Orchestration</b>.</p>
-            <p>I have engineered this stack to bridge the gap: providing <b>High-IQ Logic</b> for C++ development and <b>High-EQ Interaction</b> for social robotics.</p>
+            <h1>🛠️ AI-Tools: Professional Workflow</h1>
+            <p>A curated ecosystem of specialized utilities used to bridge the gap between creative conceptualization and hardware implementation.</p>
         </div>
         <div class="header-img">
-            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=250" alt="AI Logic">
+            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=250" alt="AI Logic Visualization">
         </div>
-    </section>
+    </div>
 
-    <h2>✨ Key Technical Features</h2>
-    <ul>
-        <li><b>LLM Orchestration:</b> Strategic partitioning between Gemini (Logic) and Pi-AI (EQ).</li>
-        <li><b>Edge ML Lifecycle:</b> Documentation for training and deploying TinyML binaries.</li>
-        <li><b>Computer Vision Utilities:</b> Professional asset cleanup via Pixelcut and Photoroom.</li>
-        <li><b>Legacy Restoration:</b> Recovery of technical diagrams via PicWish.</li>
-        <li><b>Hardware-Aware Prompting:</b> Templates optimized for Embedded C++ and MicroPython.</li>
-    </ul>
+    <p>In a modern robotics workflow, relying on a single "General AI" often leads to prompt fatigue and suboptimal code. True efficiency comes from <b>Model Orchestration</b>—choosing the right tool for the specific technical or creative hurdle.</p>
 
-    <h2>🛠️ The Primary Stack</h2>
     <table>
         <thead>
             <tr>
@@ -132,7 +144,7 @@
         </tbody>
     </table>
 
-    <h2>🔌 System Logic</h2>
+    <h2 id="logic">🔌 System Logic</h2>
     <div class="pill">
         <b>Brain vs. Heart:</b> Gemini drives the hardware (Executive Function), while Pi-AI refines the human interface (Social Layer).
     </div>
@@ -140,17 +152,33 @@
     <h2>📐 Repository Structure</h2>
     <div class="card-container">
         <div class="card">
-            <h3>/prompts</h3>
-            <p>Hardware-aware templates for MicroPython and C++.</p>
+            <h3>Chatbots</h3>
+            <p>Logic files for steering specific LLMs toward robotics.</p>
+            <div class="card-links">
+                <a href="https://matsrobot.github.io/AI-Foundations/AI-Tools/chatbots/gemini-logic.html">Gemini Logic →</a>
+                <a href="https://matsrobot.github.io/AI-Foundations/AI-Tools/chatbots/deepseek-tech.html">DeepSeek Tech →</a>
+                <a href="https://matsrobot.github.io/AI-Foundations/AI-Tools/chatbots/pi-companion.html">Pi Companion →</a>
+            </div>
         </div>
+
         <div class="card">
-            <h3>/configs</h3>
-            <p>Instructions for steering LLM personas toward robotics.</p>
+            <h3>Technical Tools</h3>
+            <p>Machine Learning and Edge AI deployment guides.</p>
+            <div class="card-links">
+                <a href="https://matsrobot.github.io/AI-Foundations/AI-Tools/technical-tools/EdgeImpulse.html">Edge Impulse Dashboard →</a>
+                <a href="https://matsrobot.github.io/AI-Foundations/AI-Tools/technical-tools/What is Edge Impulse.html">What is Edge Impulse? →</a>
+                <a href="https://matsrobot.github.io/AI-Foundations/AI-Tools/technical-tools/edge-ml-guide.html">Edge ML Guide →</a>
+            </div>
         </div>
+
         <div class="card">
-            <h3>Model_Comparison.md</h3>
-            <p>Deep-dive into strengths and weaknesses of core models.</p>
+            <h3>Image Tools</h3>
+            <p>Utilities for processing visual documentation assets.</p>
+            <div class="card-links">
+                <a href="https://matsrobot.github.io/AI-Foundations/AI-Tools/image-tools/index.html">View Image Tools →</a>
+            </div>
         </div>
+
     </div>
 
     <footer class="footer">

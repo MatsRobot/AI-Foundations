@@ -1,5 +1,14 @@
 # 🛠️ AI-Tools: Professional Workflow & Utility Integration
 
+<p align="left">
+  <a href="https://matsrobot.github.io/AI-Foundations/AI-Tools/">
+    <img src="https://img.shields.io/badge/Open_Tools_Page-0366d6?style=for-the-badge&logo=github-pages&logoColor=white" />
+  </a>
+  <a href="https://matsrobot.github.io/AI-Foundations/">
+    <img src="https://img.shields.io/badge/AI_Foundations_Home-24292e?style=for-the-badge&logo=brain&logoColor=white" />
+  </a>
+</p>
+
 **AI-Tools** is a curated ecosystem of specialized artificial intelligence utilities used to bridge the gap between creative conceptualization and hardware implementation. This repository provides a **Multi-Model Strategy**, moving away from "General AI" use-cases to establish a high-precision workflow for robotics and digital documentation.
 
 ---
@@ -19,43 +28,11 @@
         In a modern robotics workflow, relying on a single "General AI" often leads to prompt fatigue and suboptimal code. True efficiency comes from <b>Model Orchestration</b>—choosing the right tool for the specific technical or creative hurdle.
       </p>
       <p>
-        I have engineered this stack to bridge the gap: providing <b>High-IQ Logic</b> for C++ development and <b>High-EQ Interaction</b> for social robotics. From using <b>Gemini</b> for VLA (Vision-Language-Action) brains to <b>Edge Impulse</b> for local sensor inference, these tools form the operational backbone of the MatsRobot project.
+        I have engineered this stack to bridge the gap: providing <b>High-IQ Logic</b> for C++ development and <b>High-EQ Interaction</b> for social robotics. From using <b>Gemini</b> for VLA (Vision-Language-Action) brains to <b>Edge Impulse</b> for local deployment:
       </p>
     </td>
   </tr>
 </table>
-
----
-
-## ✨ Key Technical Features
-
-- **LLM Orchestration:** Strategic partitioning of tasks between Google Gemini (Logic/Vision) and Pi-AI (Conversational/EQ).
-- **Edge ML Lifecycle:** Full-stack documentation for training models on raw sensor data and deploying optimized C++ binaries to microcontrollers.
-- **Computer Vision Utilities:** Utilizing AI-driven background removal and object reconstruction (Pixelcut/Photoroom) for professional-grade commercial assets.
-- **Legacy Restoration Workflow:** AI-powered sharpening and denoising (PicWish) to recover technical diagrams and low-resolution archival data.
-- **Hardware-Aware Prompting:** Modular templates designed specifically for generating "Embedded C++" and MicroPython drivers with minimal iterative error.
-
-## 🛠️ Hardware Stack & Specs
-
-- **Core Logic Engine:** Google Gemini (Multimodal Vision & 2M Token Context).
-- **Social Interface:** Inflection Pi-AI (High-EQ Conversational Fluidity).
-- **Inference Platform:** Edge Impulse (TinyML for RP2040/ESP32).
-- **Creative Engines:** Pixelcut, Photoroom, and Pixlr Express (Generative Fill/Expand).
-
----
-
-## 🔌 System Logic & Deployment
-
-### The "Brain vs. Heart" Framework
-
-For robotics development, I implement a dual-core AI approach to separate logic from interaction:
-
-1. **The Executive Brain (Gemini):** Handles coordinate mapping, API calls, and physical logic. It is the engine that drives the hardware scripts.
-2. **The Social Interface (Pi-AI):** Acts as the personality layer, used to refine the robot's "voice" and manage human-centric interactions.
-
-### Edge Intelligence Workflow
-
-Instead of relying on cloud latency, we use **Edge Impulse** for local deployment:
 
 1. **Data Collection:** Capture real-world IMU or Microphone data via MCU.
 2. **Training:** Utilize GPU-accelerated windows for specialized TinyML models.
@@ -65,21 +42,22 @@ Instead of relying on cloud latency, we use **Edge Impulse** for local deploymen
 
 ## 📐 Repository Structure
 
-| Folder / File             | Technical Description                                            |
-| :------------------------ | :--------------------------------------------------------------- |
-| **`/prompts`**            | Hardware-aware templates for MicroPython and C++.                |
-| **`/configs`**            | Custom instructions for steering LLM personas toward robotics.   |
-| **`/tutorials`**          | Step-by-step guides for Background Removal and Text Enhancement. |
-| **`Model_Comparison.md`** | Detailed strengths/weaknesses of Gemini, Pi, and DeepSeek.       |
-| **`Edge_ML_Setup.py`**    | Scripts for preparing raw sensor data for Edge Impulse training. |
+| Folder / File | Technical Description |
+| :--- | :--- |
+| **[`/chatbots`](https://matsrobot.github.io/AI-Foundations/AI-Tools/chatbots/)** | Logic files for steering **Gemini**, **DeepSeek**, and **Pi-AI**. |
+| **[`/technical-tools`](https://matsrobot.github.io/AI-Foundations/AI-Tools/technical-tools/)** | **Edge Impulse** dashboards and TinyML implementation guides. |
+| **[`/image-tools`](https://matsrobot.github.io/AI-Foundations/AI-Tools/image-tools/)** | Utilities for visual documentation and asset optimization. |
+| **[`/prompts`](https://matsrobot.github.io/AI-Foundations/AI-Tools/prompts/)** | Hardware-aware templates for MicroPython and C++ registers. |
+| **`Model_Comparison.md`** | Detailed technical benchmarks of core LLM models. |
 
 ---
 
 ## ⚡ Quick Start
 
-1. **Compare Models:** Review `Model_Comparison.md` to select the right AI for your current task.
-2. **Deploy Prompts:** Use the templates in `/prompts` to generate code compatible with specific MCU registers.
-3. **Optimize Assets:** Use the linked Visual AI tools to clean up project documentation before deployment.
+1. **Model Selection:** Review [`Model_Comparison.md`](https://matsrobot.github.io/AI-Foundations/AI-Tools/Model_Comparison.md) to select the right AI for your current task.
+2. **Initialize Logic:** Use the configurations in [`/chatbots`](https://matsrobot.github.io/AI-Foundations/AI-Tools/chatbots/) to prime your AI partner for robotics code.
+3. **Deploy Edge AI:** Follow the [`edge-ml-guide.md`](https://matsrobot.github.io/AI-Foundations/AI-Tools/technical-tools/edge-ml-guide.md) to deploy models to ESP32/RP2040 hardware.
+4. **Optimize Assets:** Use the linked [Image Tools](https://matsrobot.github.io/AI-Foundations/AI-Tools/image-tools/index.html) to clean up project documentation before publishing.
 
 ---
 
